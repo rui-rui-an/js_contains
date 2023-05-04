@@ -30,8 +30,7 @@ export default {
   methods: {
     bodyClick(e) {
       const left = document.querySelector('.left');
-      const right = document.querySelector('.right');
-      if (left && !left.contains(e.target) && right.contains(e.target)) {
+      if (left && !left.contains(e.target)) {
         this.showLeft = false;
       }
     },
